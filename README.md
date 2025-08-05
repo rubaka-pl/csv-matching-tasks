@@ -29,27 +29,20 @@ npm install lz4
 ## 2. Prepare Input File
 Place your own data file named:
 
-Copy
-Edit
 find_match_average.dat.lz4
 in the project root directory. This is the file that will be read and decompressed with:
 
-js
-Copy
-Edit
 const fs = require('fs');
 const lz4 = require('lz4');
 
 const compressed = fs.readFileSync('find_match_average.dat.lz4');
+
 3. Run the Script
-bash
-Copy
-Edit
+
 node main.cjs
-Example Output
-yaml
-Copy
-Edit
+
+## Example Output
 INDEX CREATED
 Weighted average: 2.0
 Execution time: 120ms
+
